@@ -1,0 +1,48 @@
+{
+  "public":{
+      "chainName": "Dropil Chain Testnet",
+      "chainId": "Dropil-Chain-Poseidon",
+      "gtm": "",
+      "slashingWindow": 10000,
+      "uptimeWindow": 250,
+      "initialPageSize": 30,
+      "bech32PrefixAccAddr": "drop",
+      "bech32PrefixAccPub": "droppub",
+      "bech32PrefixValAddr": "dropvaloper",
+      "bech32PrefixValPub": "dropvaloperpub",
+      "bech32PrefixConsAddr": "dropvalcons",
+      "bech32PrefixConsPub": "dropvalconspub",
+      "bondDenom": "udrop",
+      "powerReduction": 1000000,
+      "coins": [
+        {
+          "denom": "udrop",
+          "displayName": "DROP",
+          "displayNamePlural": "Drops",
+          "fraction": 1000000
+        }
+      ],
+      "gasPrice": 0.000005,
+      "coingeckoId": "dropil"
+  },
+  "genesisFile": "https://docs.dropilchain.com/info/genesis.json",
+  "remote":{
+    "rpc":"http://localhost:26657",
+    "lcd":"http://localhost:1317"
+  },
+  "debug": {
+      "startTimer": true,
+      "readGenesis": true
+  },
+  "params":{
+      "startHeight": 0,
+      "defaultBlockTime": 5000,
+      "blockInterval": 15000,
+      "consensusInterval": 1000,
+      "statusInterval":7500,
+      "signingInfoInterval": 1800000,
+      "proposalInterval": 5000,
+      "missedBlocksInterval": 60000,
+      "delegationInterval": 900000
+  }
+}
